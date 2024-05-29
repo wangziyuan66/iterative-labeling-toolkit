@@ -8,15 +8,15 @@
 #### $6 taiyaki checkpoint path
 #### $7 raw path
 
-$datasets=$1
-$path=$2
-$genome=$3
-$config=$4
-$model=$5
-$checkpoint=$6
-$raw=$7
-$taiyaki=./
-$guppy=./
+datasets=$1
+path=$2
+genome=$3
+config=$4
+model=$5
+checkpoint=$6
+raw=$7
+taiyaki=./
+guppy=./
 
 
 singularity exec --nv $guppy/guppy_megalodon.sif /home/ont-guppy/bin/guppy_basecaller --input_file_list $datasets/train.txt --save_path $path --align_ref $genome/rna.fa --align_type auto --bam_out --config $config --model_file $model --device cuda:0 --disable_qscore_filtering
