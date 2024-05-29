@@ -1,5 +1,27 @@
+######## Input
 
-singularity exec --nv $guppy/guppy_megalodon.sif /home/ont-guppy/bin/guppy_basecaller --input_file_list $datasets/train.txt --save_path $path --align_ref $genome/rna.fa --align_type auto --bam_out --config $config --model_file $model --device cuda:0 --disable_qscore_filtering
+#### $1 train file list
+#### $2 ouput save path
+#### $3 genome path
+#### $4 config path
+#### $5 guppy model path
+#### $6 taiyaki checkpoint path
+#### $7 raw path
+#### $8 taiyaki env path
+#### $9 guppy env path
+
+$datasets=$1
+$path=$2
+$genome=$3
+$config=$4
+$model=$5
+$checkpoint=$6
+$raw=$7
+$taiyaki=$8
+$guppy=$9
+
+
+singularity exec --nv $guppy/guppy_megalodon.sif /home/ont-guppy/bin/guppy_basecaller --input_file_list $datasets --save_path $path --align_ref $genome/rna.fa --align_type auto --bam_out --config $config --model_file $model --device cuda:0 --disable_qscore_filtering
 rm $path/fastq_runid*.fastq
 rm $path/guppy_basecaller_log*.log
 rm $path/sequencing_telemetry.js
