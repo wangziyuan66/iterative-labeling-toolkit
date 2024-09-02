@@ -30,4 +30,22 @@ Create a standalone envrionment to run the iterative-labeling-toolkit.
 bash taiyaki_iterative_lableing_toolkit.sh train_hdf5 output_path reference guppy_config guppy_model taiyaki_model raw_fast5 niters
 ```
 
++ **train_hdf5** : The path to training hdf5.
+
++ **output_path** : The path to trained models.
+
++ **reference** : Reference genome path.
+
++ **guppy_config** : The config file for guppy basecaller.
+
++ **guppy_model** : The guppy basecaller model for zero iteration: initial model for Iterative basecalling.
+
++ **taiyaki_model** : The model template for taiyaki training strategy.
+
++ **raw_fast5** : The folder to the raw fast5 files.
+
++ **niters** : The number of iterations for Iterative Labeling.
+
 # Contact
+
+Ziyuan Wang princezwang@arizona.edu
