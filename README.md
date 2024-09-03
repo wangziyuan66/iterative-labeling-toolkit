@@ -15,14 +15,13 @@ Nucleotide modifications deviate nanopore sequencing readouts, therefore generat
 git clone https://github.com/wangziyuan66/iterative-labeling-toolkit-taiyaki
 ```
 
-## Step 2: build sif file
+## Step 2: download Taiyaki sif environment
 
-```bash
-singularity build guppy_megalodon.sif guppy_megalodon.recipe
-singularity build taiyaki.sif taiyaki.recipe
-```
+Considering **Taiyaki** has been deprecated by Oxford Nanopore Group, we provide a recipe file which could be utiled to create the [singularity sif image]([https://docs.sylabs.io/guides/3.3/user-guide/cli/singularity_sif.html](https://docs.sylabs.io/guides/3.3/user-guide/quick_start.html#overview-of-the-singularity-interface)) or [docker image](https://docs.sylabs.io/guides/2.6/user-guide/singularity_and_docker.html) in taiyaki/taiyaki.recipe.
 
-Create a standalone envrionment to run the iterative-labeling-toolkit.
+Here is [How to build the Singularity image](https://docs.sylabs.io/guides/2.6/user-guide/build_a_container.html).
+
+The builded image can also be downloaded in our [figshare](https://figshare.com/s/6bce33cadffb8bd8b622).
 
 # Usage
 
