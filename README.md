@@ -23,6 +23,10 @@ Here is [How to build the Singularity image](https://docs.sylabs.io/guides/2.6/u
 
 The builded image can also be downloaded in our [figshare](https://figshare.com/s/6bce33cadffb8bd8b622).
 
+## Step 3 : download Guppy Basecaller sif environment
+
+The builded image can also be downloaded in our [figshare](https://arizona.figshare.com/account/articles/26781733?file=48959431).
+
 # Usage
 
 ```bash
